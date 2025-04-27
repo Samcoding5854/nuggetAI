@@ -1,77 +1,132 @@
-from selenium import webdriver
-from selenium.webdriver.common.action_chains import ActionChains
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from selenium.webdriver.common.by import By
-from selenium.common.exceptions import TimeoutException
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.options import Options
-import time
+import os
+import json
+import requests
+import argparse
+import pandas as pd
+import csv
+from bs4 import BeautifulSoup
+import re
+from html import unescape
 
+# User-agent header to mimic a web browser's request
+headers = {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.97 Safari/537.36'}
 
-class Booking(webdriver.Chrome):
-    def __init__(self,teardown=False):
-        self.teardown = teardown
-        chrome_options = Options()
+def save_json(name, data):
+    """ Save the JSON data """
+    with open(f"{name}.json", "w") as file:
+        json.dump(data, file, indent=4)
 
-        # Run in incognito mode
-        chrome_options.add_argument("--incognito")
-        chrome_options.add_argument("--no-sandbox")
-        # chrome_options.add_argument("--headless")
-        chrome_options.add_argument("--disable-dev-shm-usage")
-        chrome_options.add_argument("--disable-gpu")  
-        chrome_options.add_argument("--disable-extensions")
-        chrome_options.add_argument("--disable-browser-side-navigation")
-        chrome_options.add_argument("--enable-features=MemorySavings")  
-        chrome_options.add_argument("--force-fieldtrials=MemorySavings/Enabled")
-        
-        chrome_options.page_load_strategy = 'eager'
-      
-        super(Booking, self).__init__(options=chrome_options)
-        self.implicitly_wait(3)
-        self.maximize_window()
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        if self.teardown:
-            self.quit()
-
-    def land_first_page(self):
-        self.get("https://magicpin.in/")
-
-    def setting_up_page(self):
-        wait = WebDriverWait(self, 10)
-        container = wait.until(EC.presence_of_element_located((By.ID, "city-popup-builder")))
-        print("Container found.")
-
-        # Step 1: Click on the city button inside the container
-        city_button = container.find_element(By.CLASS_NAME, "searchLocation")
-        city_button.click()
-        print("City button clicked.")
-
-        location_input = wait.until(EC.visibility_of_element_located((By.CSS_SELECTOR, "#city-popup-builder input.location")))
-        print("Location input field found.")
-
-        location_input.clear()
-        location_input.send_keys("Andheri, Mumbai")
-        location_input.send_keys(Keys.RETURN)
-        print("Location input filled and submitted.")
-        time.sleep(5)
-
-        # Step 2: Locate the search results container
-        search_results_container = wait.until(EC.presence_of_element_located((By.CLASS_NAME, "searchLocationResults")))
-        print("Search results container found.")
-
-        # Step 3: Print the content of the search results container
-        print("Search results content:")
-        print(search_results_container.get_attribute("outerHTML"))
-  
-        time.sleep(5)  # optional wait if suggestions drop down
+def extract_needed_data(json_data):
+    """ Extracts only the relevant data for CSV conversion """
+    if isinstance(json_data, str):
+        # If the data is still a string, it might be double-encoded JSON
+        json_data = json.loads(json_data)
+    # Extract the resId
+    resId = str(json_data.get("pages", {}).get('current', {}).get("resId"))
+    # Use the resId to access the menus
+    menus = json_data.get("pages", {}).get('restaurant', {}).get(resId, {}).get("order", {}).get("menuList", {}).get("menus", [])
+    name = json_data.get("pages", {}).get('restaurant', {}).get(resId, {}).get("sections", {}).get("SECTION_BASIC_INFO", {}).get('name')
     
+    # Filter out only the relevant data for CSV conversion
+    filtered_menus = []
+    for menu in menus:
+        filtered_menu = {
+            "name": menu.get("menu", {}).get("name", ""),  # Correctly extract menu name
+            "category": []
+        }
+        for category in menu.get("menu", {}).get("categories", []):
+            filtered_category = {
+                "name": category.get("category", {}).get("name", ""),  # Correctly extract category name
+                "items": []
+            }
+            for item in category.get("category", {}).get("items", []):
+                filtered_item = {
+                    "name": item["item"]["name"],
+                    "price": item["item"]["display_price"],
+                    "desc": item["item"]["desc"],
+                    "dietary_slugs": ','.join(item["item"].get("dietary_slugs", []))  # Combine dietary_slugs into a single string
+                }
+                filtered_category["items"].append(filtered_item)
+            filtered_menu["category"].append(filtered_category)
+        filtered_menus.append(filtered_menu)
+    
+    return {'name': name, 'menus': filtered_menus}
 
+def json_to_csv(json_data, csv_filepath):
+    """ Convert JSON data to CSV """
+    # Prepare CSV data
+    csv_data = []
+    for menu in json_data.get("menus", []):
+        for category in menu.get("category", []):
+            for item in category.get("items", []):
+                item_name = item["name"]
+                price = item["price"]
+                desc = item["desc"]
+                dietary_slugs = item["dietary_slugs"]
+                # Add row to CSV data including dietary_slugs
+                csv_data.append([json_data["name"], menu["name"], category["name"],  dietary_slugs, item_name, price, desc])
+
+    # Write data to CSV
+    with open(csv_filepath, 'w', newline='', encoding='utf-8') as csv_file:
+        writer = csv.writer(csv_file)
+        writer.writerow(["Restaurant", "Menu", "Category", "Veg/NonVeg", "Item Name", "Price", "Description"])
+        writer.writerows(csv_data)
+
+def get_menu(url, save=True):
+    """ Get all Menu Items from the passed URL """
+    global headers
+    url += '/order'
+    
+    # Request for the webpage
+    try:
+        webpage = requests.get(url, headers=headers, timeout=10)
+    except requests.exceptions.ReadTimeout:
+        print(f"Request timed out for URL: {url}")
+        
+    html_text = BeautifulSoup(webpage.text, 'html.parser')
+    
+    scripts = html_text.find_all('script')  # Make sure you define `scripts`
+    for script in scripts:
+        if 'window.__PRELOADED_STATE__' in script.text:
+            # Find the JSON.parse argument
+            match = re.search(r'window\.__PRELOADED_STATE__ = JSON\.parse\((.+?)\);', script.text)
+            if match:
+                # Extract the matched group which is the argument to JSON.parse
+                json_str_escaped = match.group(1)
+                # Unescape the string to convert it to a proper JSON format
+                json_str = unescape(json_str_escaped)
+                # The string is double-encoded, so we decode it again
+                try:
+                    json_str = json.loads(json_str)
+                    preloaded_state = json.loads(json_str)
+                    # Extract only the needed data from preloaded_state
+                    needed_data = extract_needed_data(preloaded_state)
+                    name = str(needed_data.get('name'))
+                    # Save the JSON data to a file
+                    if save:
+                        save_json(name, needed_data)
+                        save_json('preloaded', preloaded_state)
+                    # Convert JSON to CSV
+                    json_to_csv(needed_data, f"{name}.csv")
+                except json.JSONDecodeError as e:
+                    print("Error decoding JSON:", e)
+                
+    restaurant_name = html_text.head.find('title').text[:-22]
+
+    return restaurant_name
+
+def main():
+    # Initialize the argument parser
+    parser = argparse.ArgumentParser(description="Scrape restaurant menu data from Zomato.")
+    
+    # Adding arguments to the CLI
+    parser.add_argument('url', type=str, help="URL of the Zomato restaurant page")
+    
+    # Parse arguments
+    args = parser.parse_args()
+    
+    # Get the menu data from the URL
+    restaurant_data = get_menu(args.url)
 
 if __name__ == "__main__":
-
-    with Booking(teardown=True) as bot:
-        bot.land_first_page()
-        bot.setting_up_page()
-        # Add any additional actions you want to perform on the first page here
+    main()

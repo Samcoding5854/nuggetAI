@@ -1,2 +1,5 @@
+pinecone-client
+sentence-transformers
 streamlit
-pinecone
+beautifulsoup4
+requests

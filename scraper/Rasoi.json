@@ -1,0 +1,1212 @@
+{
+    "name": "Rasoi",
+    "menus": [
+        {
+            "name": "Meals",
+            "category": [
+                {
+                    "name": "Meals",
+                    "items": [
+                        {
+                            "name": "Chicken Green Thai Curry with Steamed Rice",
+                            "price": 759,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Red Thai Curry with Steamed Rice",
+                            "price": 759,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Claypot with Steamed Rice",
+                            "price": 759,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Green Thai Curry with Steamed Rice",
+                            "price": 867,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Red Thai Curry with Steamed Rice",
+                            "price": 867,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Claypot with Steamed Rice",
+                            "price": 867,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Veg Red Thai Curry with Exotic Veggies and Steamed Rice",
+                            "price": 730,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Mango Festival",
+                    "items": [
+                        {
+                            "name": "Raw Mango Malwani Chicken Curry",
+                            "price": 575,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Soups",
+            "category": [
+                {
+                    "name": "Veg Soups",
+                    "items": [
+                        {
+                            "name": "Veg Manchow Soup",
+                            "price": 411,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Veg Sweet Corn Soup",
+                            "price": 452,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Veg Hot and Sour Soup",
+                            "price": 389,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Veg Tom Yum Soup",
+                            "price": 452,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Veg Lemon Coriander Broth Soup",
+                            "price": 452,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Tomato Soup",
+                            "price": 314,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Non Veg Soups",
+                    "items": [
+                        {
+                            "name": "Chicken Manchow Soup",
+                            "price": 474,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Sweet Corn Soup",
+                            "price": 521,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Hot and Sour Soup",
+                            "price": 446,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Tom Yum Soup",
+                            "price": 521,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Lemon Coriander Broth Soup",
+                            "price": 521,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Tom Yum Soup",
+                            "price": 549,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Manchow Soup",
+                            "price": 499,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Seafood Chowder Soup",
+                            "price": 578,
+                            "desc": "A delicious medley of squid, prawns and fish.",
+                            "dietary_slugs": "non-veg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Shorba",
+                    "items": [
+                        {
+                            "name": "Kumbh Pudina Shorba",
+                            "price": 312,
+                            "desc": "Wild mushrooms broth infused with mint.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Rajma aur Tamatar Mulligatawny",
+                            "price": 300,
+                            "desc": "An interesting twist to the populer mulligatawny.",
+                            "dietary_slugs": "veg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Starters",
+            "category": [
+                {
+                    "name": "Veg Starters",
+                    "items": [
+                        {
+                            "name": "Noor E Elahi",
+                            "price": 481,
+                            "desc": "Sweet potato crunchy kebab.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Kasundi Broccoli",
+                            "price": 550,
+                            "desc": "Chargrilled juicy broccoli florets marinated in spiced mustard.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Dahi ke Kebab",
+                            "price": 550,
+                            "desc": "Smooth hung curd with over tones of cardamom and coriander crafted into delicious kebabs.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Soya Hara Matar Seekh",
+                            "price": 494,
+                            "desc": "Packed with protein a definite choice for health freaks.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Paneer Achari Methi Tikka",
+                            "price": 520,
+                            "desc": "Cottage cheese marinated in pickled spices.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Rasoi Paneer Tikka",
+                            "price": 550,
+                            "desc": "Paneer tikka stuffed with dry fruits, Cheddar and spices.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Bharwan Kumbh Peshawari",
+                            "price": 524,
+                            "desc": "Mushroom stuffed with in house spices and cheese.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Firdausi Aloo",
+                            "price": 468,
+                            "desc": "Stuffed aloo pesto.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Aloo Di Tuk",
+                            "price": 468,
+                            "desc": "A house specialty.",
+                            "dietary_slugs": "veg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Non Veg Starters",
+                    "items": [
+                        {
+                            "name": "Sigri Murgh",
+                            "price": 521,
+                            "desc": "Chicken drumstick marinated overnight and cooked to a smokey perfection.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Patiala Seekh",
+                            "price": 619,
+                            "desc": "The Rasoi legendary seekh kabab blended with the distinct flavours of coriander, cheese, cream and spices.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Bhatti ka Murgh",
+                            "price": 578,
+                            "desc": "Discover the taste of decadence juicy chicken legs marinated in exotic spiced yogurt and completed to a crisp finish on the bhatti.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Tamarind Tandoori Chicken Wings",
+                            "price": 521,
+                            "desc": "Chicken wings marinated with curd and aromatic spices, cooked in tandoor finished with a tamarind pulp glaze.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Murgh Multani Tikka",
+                            "price": 550,
+                            "desc": "Succulent chicken with byadgi chilli.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chargha Kukkad",
+                            "price": 619,
+                            "desc": "A delicacy from the streets of Lahore chicken marinated with home ground spices.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Tandoori Kukkad",
+                            "price": 550,
+                            "desc": "Chicken flavored with curd, red chilli and kasoori methi.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Rasoi Chaap",
+                            "price": 787,
+                            "desc": "24 Hours succulent marinated mutton chops cooked to perfection.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Nizamuddin Mutton Boti",
+                            "price": 843,
+                            "desc": "Succulent mutton chunks marinated with Indian spices and herbs, chargrilled in tandoor served with dhaniya kulcha.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Mutton Patiala Seekh",
+                            "price": 844,
+                            "desc": "The Rasoi legendary seekh kabab blended with the distinct flavours of coriander, cheese, cream and spices.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Bharleli Paplet",
+                            "price": 1733,
+                            "desc": "A Maharashtrian style cast iron grilled pomfret stuffed with coconut green chutney.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Zabardast Pomfret",
+                            "price": 1760,
+                            "desc": "Tandoori whole fish.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Lawrence Road ki Machli",
+                            "price": 732,
+                            "desc": "Fish spiced with Amritsari masala cooked to perfection.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Surmai Rava Fry",
+                            "price": 772,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Rawas Rava Fry",
+                            "price": 732,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Pomfret Rava Fry",
+                            "price": 1385,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Tari Wali Machli",
+                            "price": 787,
+                            "desc": "A home recipe with pizzazz served with an onion relish.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Ajwaini Fish Tikka",
+                            "price": 699,
+                            "desc": "Rawas marinated in sarson, ajwain and spices.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Kundapur Tawa Surmai",
+                            "price": 883,
+                            "desc": "Our coastal specialty.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Tawa Jheenga",
+                            "price": 1051,
+                            "desc": "Fresh from the ocean, chargrilled tangy prawns.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Koliwada Prawns",
+                            "price": 883,
+                            "desc": "Crunchy prawns in a typical koliwada mixture.",
+                            "dietary_slugs": "non-veg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Main Course",
+            "category": [
+                {
+                    "name": "Veg Main Course",
+                    "items": [
+                        {
+                            "name": "Paneer Nimbu Do Pyaza",
+                            "price": 619,
+                            "desc": "Creamy cottage cheese cooked in a tomato based gravy with double tadka.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Falguni Sabzi",
+                            "price": 564,
+                            "desc": "Mixed vegetables gravy with spinach and fenugreek.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Kashmiri Methi Chaman",
+                            "price": 619,
+                            "desc": "Our take on a traditional Kashmiri dish made with a rich tomato gravy flavored with cinnamon and fennel.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Awadhi Kofta",
+                            "price": 619,
+                            "desc": "Spinach and potato dumpling in a rich cashew gravy.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Chowgra",
+                            "price": 521,
+                            "desc": "Luscious Hyderabadi curry of mixed vegetables.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Mushroom Palak Masala",
+                            "price": 578,
+                            "desc": "Mushroom lovers.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Aloo Nimbodi",
+                            "price": 466,
+                            "desc": "Potato roasted in ghee, cumin and peri peri seasoning.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Aloo E Dum",
+                            "price": 521,
+                            "desc": "Crispy potato simmered in a rich gravy flavoured with mild spices.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Baby Corn Jalfrezi",
+                            "price": 507,
+                            "desc": "Batons of baby corn simmered in a rich tangy gravy.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Dahi Wali Bhindi",
+                            "price": 564,
+                            "desc": "Spiced lady finger in a delicious based yogurt gravy.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Gujarati Kadhi",
+                            "price": 438,
+                            "desc": "Burst of sweet and spicy flavours.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Balle Balle Chole",
+                            "price": 468,
+                            "desc": "Our naughty twist on the Amritsari chole.",
+                            "dietary_slugs": "veg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Dal",
+                    "items": [
+                        {
+                            "name": "Dal Al Rasoi",
+                            "price": 507,
+                            "desc": "Whole urad, rajma, chana dal simmered overnight with hint of mustard oil finished with tomato puree and cream tempered with ghee.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Dal Panchratan",
+                            "price": 481,
+                            "desc": "Land of five rivers come lentils cooked.",
+                            "dietary_slugs": "veg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Non Veg Main Course",
+                    "items": [
+                        {
+                            "name": "Makhani Dum Chooza",
+                            "price": 732,
+                            "desc": "Tandoori chicken in a creamy tomato gravy infused with kasoori methi.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Nawabi Murgh",
+                            "price": 690,
+                            "desc": "Chicken tikka cooked in rich Lucknowi gravy.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Dhaniya Mirch da Kukkad",
+                            "price": 730,
+                            "desc": "Succulent chicken drumstick simmered with stock, spiked with whole coriander, green chillies and spices.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Saag Murgh",
+                            "price": 675,
+                            "desc": "Saag murgh.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Saag Gosht",
+                            "price": 766,
+                            "desc": "Succulent mutton cooked to perfection in an aromatic spinach and cream gravy.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Meat Rasoi",
+                            "price": 843,
+                            "desc": "Lamb pieces slow cooked with in house spices on the angeethi.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Mutton Keema Ghotala",
+                            "price": 800,
+                            "desc": "A bambaiya specialty with our twist.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Karavali Fish Curry",
+                            "price": 843,
+                            "desc": "Fragrant fish curry with fresh coconut and blended spices.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Jheenga Malai Curry",
+                            "price": 883,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Kadhai Jheenga",
+                            "price": 883,
+                            "desc": "Prawns dusted with pepper and roasted in whole spices.",
+                            "dietary_slugs": "non-veg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Chinese Main Course",
+                    "items": [
+                        {
+                            "name": "Cottage Cheese in Schezwan Sauce",
+                            "price": 730,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Exotic Veggies in Sambal",
+                            "price": 661,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Crispy Mushroom in Black Pepper Sauce",
+                            "price": 730,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Cottage Cheese with Exotic Veggies in Hot Garlic",
+                            "price": 730,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Seasonal Veggies Claypot",
+                            "price": 722,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Chicken in Simple Sauce",
+                            "price": 772,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Choose Your in Mixed Seafood Sauce",
+                            "price": 917,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Tossed in Sambal Sauce",
+                            "price": 619,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Tossed in Sambal Sauce",
+                            "price": 843,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Breads",
+            "category": [
+                {
+                    "name": "",
+                    "items": [
+                        {
+                            "name": "Tandoori Roti",
+                            "price": 98,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Lachha Paratha",
+                            "price": 127,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Missi Roti",
+                            "price": 127,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Plain Naan",
+                            "price": 127,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Garlic Naan",
+                            "price": 154,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Cheese Garlic Naan",
+                            "price": 195,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Kulcha",
+                            "price": 127,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Pyaz ka Kulcha",
+                            "price": 182,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Stuffed Aloo Dhaniya Kulcha",
+                            "price": 195,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Roti Basket",
+                            "price": 486,
+                            "desc": "Tandoori roti, kulcha, missi roti, lachha paratha.",
+                            "dietary_slugs": "veg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Rice and Biryani",
+            "category": [
+                {
+                    "name": "Rice",
+                    "items": [
+                        {
+                            "name": "Desi Dal Khichdi",
+                            "price": 481,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Jeera Rice",
+                            "price": 354,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Steamed Rice",
+                            "price": 327,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Biryani",
+                    "items": [
+                        {
+                            "name": "Rasoi Khaas Subz Biryani",
+                            "price": 633,
+                            "desc": "A veggie delight.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Chicken Nukked Wali Biryani",
+                            "price": 690,
+                            "desc": "Served with lahsun ka raita.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Mutton Nukked Wali Biryani",
+                            "price": 883,
+                            "desc": "Served with lahsun ka raita.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Koli Kolambi Pulao",
+                            "price": 898,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Chinese",
+            "category": [
+                {
+                    "name": "Veg Chinese",
+                    "items": [
+                        {
+                            "name": "Salt and Pepper Mushroom",
+                            "price": 592,
+                            "desc": "Crispy crunch mildly spiced mushroom.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Shanghai Corn and Water Chestnut",
+                            "price": 592,
+                            "desc": "Zingy zing.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Stir Fry Long Beans",
+                            "price": 592,
+                            "desc": "In chilli toban sauce.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Salted Steamed Edamame",
+                            "price": 647,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Garlic Steamed Edamame",
+                            "price": 660,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Stir Fry Pak Choy",
+                            "price": 592,
+                            "desc": "[Veg preparation] Burnt garlic and oyster sauce.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Kung Pao Potatoes",
+                            "price": 578,
+                            "desc": "Mushrooms stuffed with in house spices and cheese.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Oyster Basil Mushroom and Cottage Cheese",
+                            "price": 592,
+                            "desc": "[Veg preparation] Thai herb stir fry.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Apna Paneer Chilli",
+                            "price": 592,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Cottage Cheese hakka style",
+                            "price": 578,
+                            "desc": "Hakka style stir fry.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Mushroom Hakka Style",
+                            "price": 592,
+                            "desc": "Hakka style stir fry.",
+                            "dietary_slugs": "veg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Non Veg Chinese",
+                    "items": [
+                        {
+                            "name": "Apna Chilli Chicken",
+                            "price": 619,
+                            "desc": "Can't go wrong.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Kung Pao Chicken",
+                            "price": 619,
+                            "desc": "How can you miss this one.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Balinese BBQ Chicken",
+                            "price": 633,
+                            "desc": "Diced chicken grilled with bbq sauce.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Xo Chicken",
+                            "price": 619,
+                            "desc": "Red and yellow bell peppers.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Teriyaki Fish",
+                            "price": 759,
+                            "desc": "Fishy business.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Xo Prawns",
+                            "price": 883,
+                            "desc": "Red and yellow bell peppers.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Brandy Flambe Prawns",
+                            "price": 883,
+                            "desc": "Butter fried, tossed in butter chilli laced with brandy.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Salt and Pepper Calamari",
+                            "price": 870,
+                            "desc": "Served with spring onion.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Chilli Basil",
+                            "price": 938,
+                            "desc": "Prawns tossed with bird chilli and basil sauce.",
+                            "dietary_slugs": "non-veg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Fried Rice and Noodles",
+            "category": [
+                {
+                    "name": "Fried Rice",
+                    "items": [
+                        {
+                            "name": "Spicy Edamame Fried Rice",
+                            "price": 549,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Veg Schezwan Fried Rice",
+                            "price": 549,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Veg Burnt Garlic Fried Rice",
+                            "price": 549,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Egg Schezwan Fried Rice",
+                            "price": 578,
+                            "desc": "",
+                            "dietary_slugs": "egg"
+                        },
+                        {
+                            "name": "Egg Burnt Garlic Fried Rice",
+                            "price": 578,
+                            "desc": "",
+                            "dietary_slugs": "egg"
+                        },
+                        {
+                            "name": "Xo Egg Fried Rice",
+                            "price": 578,
+                            "desc": "",
+                            "dietary_slugs": "egg"
+                        },
+                        {
+                            "name": "Chicken Schezwan Fried Rice",
+                            "price": 592,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Burnt Garlic Fried Rice",
+                            "price": 592,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Schezwan Fried Rice",
+                            "price": 633,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Emperor Seafood Rice",
+                            "price": 675,
+                            "desc": "Medley of prawns, squid, fish.",
+                            "dietary_slugs": "non-veg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Noodles",
+                    "items": [
+                        {
+                            "name": "Veg Crispy ziang Noodles",
+                            "price": 549,
+                            "desc": "Crispy noodles topped with flavoured oriental sauce.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Veg Hakka Noodles",
+                            "price": 499,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Veg Singapore Noodles",
+                            "price": 549,
+                            "desc": "Vermicelli noodles.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Soba Noodles",
+                            "price": 578,
+                            "desc": "Mushroom and red yellow peppers.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Veg Pad Thai Noodles",
+                            "price": 549,
+                            "desc": "Stir fried rice noodles.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Chicken Crispy Ziang Noodles",
+                            "price": 592,
+                            "desc": "Crispy noodles topped with flavoured oriental sauce.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Singapore Noodles",
+                            "price": 592,
+                            "desc": "Vermicelli noodles.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Hakka Noodles",
+                            "price": 538,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Pad Thai Noodles",
+                            "price": 592,
+                            "desc": "Stir fried rice noodles.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Crispy Ziang Noodles",
+                            "price": 633,
+                            "desc": "Crispy noodles topped with flavoured oriental sauce.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Singapore Noodle",
+                            "price": 633,
+                            "desc": "Vermicelli noodles.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Hakka Noodles",
+                            "price": 633,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Pad Thai Noodles",
+                            "price": 633,
+                            "desc": "Stir fried rice noodles.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Spicy Seafood Noodles",
+                            "price": 954,
+                            "desc": "Bean sprouts and seafood medley.",
+                            "dietary_slugs": "non-veg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Dim Sum",
+            "category": [
+                {
+                    "name": "",
+                    "items": [
+                        {
+                            "name": "Cantonese Crystal Dumplings Dim Sum [5 Pieces]",
+                            "price": 523,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Truffle and Wild Mushroom Dim Sum [5 Pieces]",
+                            "price": 564,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Broccoli Water Chestnut and Pak Choy Dim Sum [5 Pieces]",
+                            "price": 564,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Chicken Enoki Dim Sum [5 Pieces]",
+                            "price": 675,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Accompaniments",
+            "category": [
+                {
+                    "name": "",
+                    "items": [
+                        {
+                            "name": "Raita",
+                            "price": 216,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Boondi Raita",
+                            "price": 230,
+                            "desc": "[Veg preparation]",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Pineapple Raita",
+                            "price": 230,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Papad [3 Pieces]",
+                            "price": 132,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Green Salad",
+                            "price": 243,
+                            "desc": "",
+                            "dietary_slugs": "veg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Desserts",
+            "category": [
+                {
+                    "name": "",
+                    "items": [
+                        {
+                            "name": "Zafrani Rasmalai [2 Pieces]",
+                            "price": 494,
+                            "desc": "Saffron infused condensed milk dumpling.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Nachni Malpua with Rabdi",
+                            "price": 550,
+                            "desc": "Burst of flavours.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Kesari Phirni",
+                            "price": 520,
+                            "desc": "A traditional Kashmiri dish with milk and rice.",
+                            "dietary_slugs": "veg"
+                        },
+                        {
+                            "name": "Gulab Jamun [3 Pieces]",
+                            "price": 494,
+                            "desc": "Dry fruit, white chocolate.",
+                            "dietary_slugs": "veg"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Malwani Food",
+            "category": [
+                {
+                    "name": "Malwani Non Veg Starters",
+                    "items": [
+                        {
+                            "name": "Pomfret Tawa Fry",
+                            "price": 1375,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Surmai Tawa Fry",
+                            "price": 803,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Tawa Fry",
+                            "price": 765,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Mutton Sukha",
+                            "price": 715,
+                            "desc": "Tender lamb chunks with coconut and aromatic dry spices prepared in South style.",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Chicken Sukha",
+                            "price": 501,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Tawa Garlic Chicken",
+                            "price": 555,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Sukha",
+                            "price": 831,
+                            "desc": "Traditional soup seasoned with Indian spices with coriander and chunks of chicken deliciously simmered.",
+                            "dietary_slugs": "non-veg"
+                        }
+                    ]
+                },
+                {
+                    "name": "Malwani Food Main Course",
+                    "items": [
+                        {
+                            "name": "Chicken Masala",
+                            "price": 665,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Mutton Masala",
+                            "price": 765,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Prawns Masala",
+                            "price": 803,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        },
+                        {
+                            "name": "Koli Kolambi Bhaat",
+                            "price": 803,
+                            "desc": "",
+                            "dietary_slugs": "non-veg"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
