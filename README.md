@@ -32,28 +32,24 @@ This project aims to answer these types of questions by:
 ## Project Structure
 
 ```
-Restaurant-Data-Scraper-RAG-Chatbot/
-├── docs/                  # Documentation and instructions
-│   ├── project_overview.md
-│   ├── installation_guide.md
-│   └── usage_instructions.md
-├── kb/                    # Knowledge Base (restaurant data storage)
-│   ├── data/              # Raw scraped data
-│   │   ├── restaurant_data.csv
-│   ├── embeddings/        # Embeddings of the restaurant data
-│   │   └── restaurant_embeddings.pkl
-│   └── pinecone_index/    # Pinecone index for vector storage
-│       └── restaurant-index
-├── prompts/               # Custom prompts used for RAG generation
-│   └── query_prompts.md
-├── scraper/               # Web scraping code for collecting restaurant data
-│   ├── scraper.py         # Web scraping logic
-│   └── utils.py           # Utility functions for scraping
-├── ui/                    # User Interface code
-│   ├── app.py             # Streamlit app for user interaction
-│   └── requirements.txt   # Requirements for UI (streamlit)
-└── requirements.txt       # General project dependencies
-
+.
+├── .streamlit/
+│   └── secrets.toml
+├── assets/
+├── kb/
+│   ├── __init__.py
+│   ├── addData.py
+│   ├── convert_data.py
+│   └── retrieve.py
+├── prompts/
+│   └── prompts.py
+├── scraper/
+│   ├── checking.py
+│   └── spider.py
+├── .gitignore
+├── app.py
+├── README.md
+├── requirements.txt
 ```
 
 ## Requirements
@@ -196,5 +192,3 @@ This project simulates a real-world application of enhancing user interaction wi
 - **Streamlit UI**: Streamlit was added to provide an interactive interface for users to interact with the chatbot.
 - **Embeddings and Pinecone Integration**: The use of Pinecone to store and query vector embeddings ensures fast and efficient retrieval of restaurant information.
 - **Model-based Question Answering**: The `Instructor` model from HuggingFace generates embeddings for both data and user queries.
-
-This should now give users a complete understanding of the project, how to set it up, and what features it offers.
